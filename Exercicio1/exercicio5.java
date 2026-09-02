@@ -1,3 +1,4 @@
+//Maykon Garcia Dias Do Nascimento
 //Faça um algoritmo que leia três notas de um aluno:
 // calcule e mostre a média aritmética do aluno.
 
