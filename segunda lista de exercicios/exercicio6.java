@@ -1,33 +1,28 @@
 ////MAYKON GARCIA DIAS DO NASCIMENTO
-//Faça um algoritmo que leia a altura e o sexo de uma pessoa:
-//calcule e mostre seu peso ideal.
+//Faça um algoritmo que leia a altura e o peso de uma pessoa:
+//calcule e mostre seu IMC
 //usar as formulas a seguir para calcular o peso ideal:
-//para o sexo masculino: p72, 7 ˆ alturaq ´ 58
-//para o sexo feminino: p62, 1 ˆ alturaq ´ 44, 7
-// A fórmula do IMC (Índice de Massa Corporal) é peso (kg) ÷ [altura (m) × altura (m)], não precisa identificar sexo.
+//A fórmula do IMC (Índice de Massa Corporal) é peso (kg) ÷ [altura (m) × altura (m)],
 
 
 import java.util.Scanner;
-public class exercicio6 {
-     public static void main(String[] args) {
-        Scanner entrada = new Scanner (System.in);
-        System.out.println("Você é do sexo masculino true/false");
-        boolean sexo = entrada.nextBoolean();
 
-        System.out.println("Digite sua altura:");
+public class exercicio6 {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite sua altura em metros:");
         double altura = entrada.nextDouble();
 
-        if (sexo == true) {
+        System.out.println("Digite seu peso em kg:");
+        double peso = entrada.nextDouble();
 
-            double pesoIdeal = 72.7 * altura - 58;
+        // Fórmula do IMC: peso / (altura * altura)
+        double imc = peso / (altura * altura);
 
-            System.out.println("Seu peso ideal é: " + pesoIdeal);
-        }
-        else {
+        System.out.println("Seu IMC é: " + imc);
 
-            double pesoIdeal = 62.1 * altura - 44.7;
-
-            System.out.println("Seu peso ideal é: " + pesoIdeal);
-        }
+        entrada.close();
     }
 }
