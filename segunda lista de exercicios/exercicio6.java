@@ -4,6 +4,7 @@
 //usar as formulas a seguir para calcular o peso ideal:
 //para o sexo masculino: p72, 7 ˆ alturaq ´ 58
 //para o sexo feminino: p62, 1 ˆ alturaq ´ 44, 7
+// A fórmula do IMC (Índice de Massa Corporal) é peso (kg) ÷ [altura (m) × altura (m)], não precisa identificar sexo.
 
 
 import java.util.Scanner;
